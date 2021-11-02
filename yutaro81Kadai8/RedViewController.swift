@@ -11,7 +11,7 @@ class RedViewController: UIViewController {
     @IBOutlet private weak var redLabel: UILabel!
     @IBOutlet private weak var slider: UISlider!
     @IBAction private func changeValueSlider(_ sender: Any) {
-        if let delegate = UIApplication.shared.delegate as? AppDelegate { //なぜif let　で書くのか、について分かりませんでした。
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
             delegate.num1 = slider.value
             self.redLabel.text = "\(delegate.num1)" }
     }
