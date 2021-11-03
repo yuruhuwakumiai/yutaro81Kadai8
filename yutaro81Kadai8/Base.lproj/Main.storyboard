@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gkm-MZ-CcW">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gkm-MZ-CcW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,17 +29,17 @@
             <objects>
                 <viewController id="5G6-Jy-9ht" customClass="GreenViewController" customModule="yutaro81Kadai8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ViO-fc-9Xw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP7-Xt-jAh">
-                                <rect key="frame" x="171.5" y="67" width="71" height="36"/>
+                                <rect key="frame" x="264.5" y="23" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-lb-evd">
-                                <rect key="frame" x="30" y="145" width="354" height="31"/>
+                                <rect key="frame" x="30" y="101" width="540" height="31"/>
                                 <connections>
                                     <action selector="changeValueSlider:" destination="5G6-Jy-9ht" eventType="valueChanged" id="EOQ-JH-18c"/>
                                 </connections>
@@ -58,7 +57,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="DOb-fd-GGJ"/>
                     <connections>
-                        <outlet property="greenLabel" destination="hP7-Xt-jAh" id="mNF-dz-yKD"/>
+                        <outlet property="label" destination="hP7-Xt-jAh" id="mNF-dz-yKD"/>
                         <outlet property="slider" destination="1ud-lb-evd" id="cQv-8Q-rDx"/>
                     </connections>
                 </viewController>
@@ -71,17 +70,17 @@
             <objects>
                 <viewController id="GA4-Cu-2dy" customClass="RedViewController" customModule="yutaro81Kadai8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V79-0M-ZUn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5e-iO-NJc">
-                                <rect key="frame" x="171.5" y="67" width="71" height="36"/>
+                                <rect key="frame" x="264.5" y="23" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ket-ze-Kyj">
-                                <rect key="frame" x="40" y="145" width="335" height="31"/>
+                                <rect key="frame" x="40" y="101" width="521" height="31"/>
                                 <connections>
                                     <action selector="changeValueSlider:" destination="GA4-Cu-2dy" eventType="valueChanged" id="6pY-hs-xXq"/>
                                 </connections>
@@ -99,7 +98,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="AVm-bJ-JlV"/>
                     <connections>
-                        <outlet property="redLabel" destination="j5e-iO-NJc" id="LNo-lm-J4j"/>
+                        <outlet property="label" destination="j5e-iO-NJc" id="LNo-lm-J4j"/>
                         <outlet property="slider" destination="ket-ze-Kyj" id="SOI-X6-gup"/>
                     </connections>
                 </viewController>
